@@ -71,10 +71,12 @@ export function Layout(props: {
             primary="Home"
             slotProps={{
               primary: {
-                fontFamily: "Manrope, sans-serif",
-                fontSize: "1.12rem",
-                fontWeight: 650,
-                letterSpacing: "0.004em"
+                sx: {
+                  fontFamily: "Manrope, sans-serif",
+                  fontSize: "1.12rem",
+                  fontWeight: 650,
+                  letterSpacing: "0.004em"
+                }
               }
             }}
           />
@@ -88,10 +90,12 @@ export function Layout(props: {
             primary="Trending"
             slotProps={{
               primary: {
-                fontFamily: "Manrope, sans-serif",
-                fontSize: "1.12rem",
-                fontWeight: 650,
-                letterSpacing: "0.004em"
+                sx: {
+                  fontFamily: "Manrope, sans-serif",
+                  fontSize: "1.12rem",
+                  fontWeight: 650,
+                  letterSpacing: "0.004em"
+                }
               }
             }}
           />
@@ -105,10 +109,12 @@ export function Layout(props: {
             primary="Music"
             slotProps={{
               primary: {
-                fontFamily: "Manrope, sans-serif",
-                fontSize: "1.12rem",
-                fontWeight: 650,
-                letterSpacing: "0.004em"
+                sx: {
+                  fontFamily: "Manrope, sans-serif",
+                  fontSize: "1.12rem",
+                  fontWeight: 650,
+                  letterSpacing: "0.004em"
+                }
               }
             }}
           />

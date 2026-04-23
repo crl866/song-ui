@@ -16,9 +16,42 @@ const theme = createTheme({
   },
   shape: { borderRadius: 14 },
   typography: {
-    fontFamily: ["Roboto", "system-ui", "-apple-system", "Segoe UI", "Arial", "sans-serif"].join(",")
+    fontFamily: ["Manrope", "Segoe UI", "Arial", "sans-serif"].join(","),
+    h6: {
+      fontFamily: ["Sora", "Manrope", "Segoe UI", "sans-serif"].join(","),
+      fontWeight: 700,
+      letterSpacing: "0.01em"
+    },
+    subtitle1: {
+      fontWeight: 700,
+      letterSpacing: "0.005em"
+    },
+    body2: {
+      fontWeight: 500,
+      lineHeight: 1.55
+    },
+    caption: {
+      fontWeight: 600,
+      color: "#334155"
+    }
   },
   components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+          fontWeight: 700,
+          letterSpacing: "0.01em"
+        }
+      }
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: "#0f172a"
+        }
+      }
+    },
     MuiAppBar: {
       styleOverrides: {
         root: {

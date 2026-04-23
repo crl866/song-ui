@@ -30,7 +30,7 @@ export function Layout(props: {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const drawer = (
-    <div className="h-full bg-[#0f0f0f]">
+    <div className="h-full bg-sky-50 text-slate-900">
       <div className="px-4 py-4">
         <Typography variant="h6" sx={{ fontWeight: 900 }}>
           SONG UI
@@ -63,7 +63,7 @@ export function Layout(props: {
   );
 
   return (
-    <div className="min-h-full bg-[#0f0f0f] text-zinc-100">
+    <div className="min-h-full bg-transparent text-slate-900">
       <AppBar position="sticky" elevation={0}>
         <Toolbar className="flex gap-2">
           <IconButton
@@ -98,7 +98,8 @@ export function Layout(props: {
               }}
               sx={{
                 "& .MuiInputBase-root": {
-                  backgroundColor: "rgba(255,255,255,0.06)",
+                  backgroundColor: "rgba(255,255,255,0.82)",
+                  border: "1px solid rgba(2,132,199,0.24)",
                   borderRadius: "999px"
                 }
               }}
@@ -115,7 +116,11 @@ export function Layout(props: {
           ModalProps={{ keepMounted: true }}
           sx={{
             display: { xs: "block", md: "none" },
-            "& .MuiDrawer-paper": { width: drawerWidth, borderRightColor: "rgba(255,255,255,0.08)" }
+            "& .MuiDrawer-paper": {
+              width: drawerWidth,
+              backgroundColor: "#f0f9ff",
+              borderRightColor: "rgba(2,132,199,0.2)"
+            }
           }}
         >
           {drawer}
@@ -128,8 +133,8 @@ export function Layout(props: {
             "& .MuiDrawer-paper": {
               width: drawerWidth,
               boxSizing: "border-box",
-              backgroundColor: "#0f0f0f",
-              borderRightColor: "rgba(255,255,255,0.08)"
+              backgroundColor: "#f0f9ff",
+              borderRightColor: "rgba(2,132,199,0.2)"
             }
           }}
           open

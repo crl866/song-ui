@@ -37,7 +37,7 @@ export function VideoPlayer(props: { song?: Song }) {
     return (
       <Paper
         variant="outlined"
-        sx={{ borderColor: "rgba(255,255,255,0.10)", backgroundColor: "rgba(255,255,255,0.03)" }}
+        sx={{ borderColor: "rgba(2,132,199,0.20)", backgroundColor: "rgba(255,255,255,0.75)" }}
         className="p-4"
       >
         <Typography variant="h6" sx={{ fontWeight: 900 }}>
@@ -56,7 +56,7 @@ export function VideoPlayer(props: { song?: Song }) {
   return (
     <Paper
       variant="outlined"
-      sx={{ borderColor: "rgba(255,255,255,0.10)", backgroundColor: "rgba(255,255,255,0.03)" }}
+      sx={{ borderColor: "rgba(2,132,199,0.20)", backgroundColor: "rgba(255,255,255,0.75)" }}
       className="p-3"
     >
       <div className="flex items-start justify-between gap-3 px-1 pb-3">
@@ -74,13 +74,13 @@ export function VideoPlayer(props: { song?: Song }) {
           variant="outlined"
           endIcon={<OpenInNewIcon />}
           onClick={() => window.open(song.videoUrl, "_blank", "noopener,noreferrer")}
-          sx={{ borderColor: "rgba(255,255,255,0.25)" }}
+          sx={{ borderColor: "rgba(2,132,199,0.35)", color: "#0369a1" }}
         >
           Open
         </Button>
       </div>
 
-      <div className="aspect-video w-full overflow-hidden rounded-2xl bg-black">
+      <div className="aspect-video w-full overflow-hidden rounded-2xl bg-sky-100">
         {ytEmbed ? (
           <iframe
             className="h-full w-full"

@@ -67,7 +67,7 @@ export default function App() {
               </div>
             )}
 
-            <Divider sx={{ borderColor: "rgba(255,255,255,0.10)" }} />
+            <Divider sx={{ borderColor: "rgba(2,132,199,0.20)" }} />
 
             <Typography variant="body2" color="text.secondary">
               Search like YouTube, then click a card in “Recommended” to play.

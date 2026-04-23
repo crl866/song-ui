@@ -14,7 +14,7 @@ export function SongCard(props: {
         onClick={() => props.onSelect(song)}
         sx={{
           borderRadius: 3,
-          outline: props.selected ? "2px solid rgba(255,0,0,0.85)" : "2px solid transparent",
+          outline: props.selected ? "2px solid rgba(14,165,233,0.9)" : "2px solid transparent",
           "&:hover .thumb": { filter: "brightness(1.06)" }
         }}
       >

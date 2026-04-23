@@ -7,12 +7,12 @@ import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 
 const theme = createTheme({
   palette: {
-    mode: "dark",
+    mode: "light",
     background: {
-      default: "#0f0f0f",
-      paper: "#181818"
+      default: "#eaf7ff",
+      paper: "#ffffff"
     },
-    primary: { main: "#ff0000" }
+    primary: { main: "#0ea5e9" }
   },
   shape: { borderRadius: 14 },
   typography: {
@@ -22,7 +22,8 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: "rgba(15,15,15,0.9)",
+          backgroundColor: "rgba(234, 247, 255, 0.86)",
+          borderBottom: "1px solid rgba(2, 132, 199, 0.20)",
           backdropFilter: "blur(10px)"
         }
       }

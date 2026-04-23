@@ -69,11 +69,13 @@ export function Layout(props: {
           </ListItemIcon>
           <ListItemText
             primary="Home"
-            primaryTypographyProps={{
-              fontFamily: "Manrope, sans-serif",
-              fontSize: "1.12rem",
-              fontWeight: 650,
-              letterSpacing: "0.004em"
+            slotProps={{
+              primary: {
+                fontFamily: "Manrope, sans-serif",
+                fontSize: "1.12rem",
+                fontWeight: 650,
+                letterSpacing: "0.004em"
+              }
             }}
           />
         </ListItemButton>
@@ -84,11 +86,13 @@ export function Layout(props: {
           </ListItemIcon>
           <ListItemText
             primary="Trending"
-            primaryTypographyProps={{
-              fontFamily: "Manrope, sans-serif",
-              fontSize: "1.12rem",
-              fontWeight: 650,
-              letterSpacing: "0.004em"
+            slotProps={{
+              primary: {
+                fontFamily: "Manrope, sans-serif",
+                fontSize: "1.12rem",
+                fontWeight: 650,
+                letterSpacing: "0.004em"
+              }
             }}
           />
         </ListItemButton>
@@ -99,11 +103,13 @@ export function Layout(props: {
           </ListItemIcon>
           <ListItemText
             primary="Music"
-            primaryTypographyProps={{
-              fontFamily: "Manrope, sans-serif",
-              fontSize: "1.12rem",
-              fontWeight: 650,
-              letterSpacing: "0.004em"
+            slotProps={{
+              primary: {
+                fontFamily: "Manrope, sans-serif",
+                fontSize: "1.12rem",
+                fontWeight: 650,
+                letterSpacing: "0.004em"
+              }
             }}
           />
         </ListItemButton>

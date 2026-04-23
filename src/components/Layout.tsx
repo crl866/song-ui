@@ -29,34 +29,83 @@ export function Layout(props: {
 }) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
+  const menuItemSx = {
+    mx: 1.2,
+    my: 0.4,
+    px: 1.6,
+    py: 1,
+    borderRadius: 2,
+    color: "#0f172a",
+    "& .MuiListItemIcon-root": {
+      minWidth: 34,
+      color: "#64748b"
+    },
+    "&:hover": {
+      backgroundColor: "rgba(14,165,233,0.14)",
+      "& .MuiListItemIcon-root": { color: "#0284c7" }
+    }
+  };
+
   const drawer = (
     <div className="h-full bg-sky-50 text-slate-900">
       <div className="px-4 py-4">
-        <Typography variant="h6" sx={{ fontWeight: 900 }}>
+        <Typography
+          variant="h6"
+          sx={{
+            fontFamily: "Sora, Manrope, sans-serif",
+            fontSize: "1.85rem",
+            fontWeight: 800,
+            letterSpacing: "0.015em"
+          }}
+        >
           SONG UI
         </Typography>
       </div>
 
-      <List>
-        <ListItemButton>
+      <List sx={{ mt: 0.5 }}>
+        <ListItemButton sx={menuItemSx}>
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
-          <ListItemText primary="Home" />
+          <ListItemText
+            primary="Home"
+            primaryTypographyProps={{
+              fontFamily: "Manrope, sans-serif",
+              fontSize: "1.12rem",
+              fontWeight: 650,
+              letterSpacing: "0.004em"
+            }}
+          />
         </ListItemButton>
 
-        <ListItemButton>
+        <ListItemButton sx={menuItemSx}>
           <ListItemIcon>
             <WhatshotIcon />
           </ListItemIcon>
-          <ListItemText primary="Trending" />
+          <ListItemText
+            primary="Trending"
+            primaryTypographyProps={{
+              fontFamily: "Manrope, sans-serif",
+              fontSize: "1.12rem",
+              fontWeight: 650,
+              letterSpacing: "0.004em"
+            }}
+          />
         </ListItemButton>
 
-        <ListItemButton>
+        <ListItemButton sx={menuItemSx}>
           <ListItemIcon>
             <MusicNoteIcon />
           </ListItemIcon>
-          <ListItemText primary="Music" />
+          <ListItemText
+            primary="Music"
+            primaryTypographyProps={{
+              fontFamily: "Manrope, sans-serif",
+              fontSize: "1.12rem",
+              fontWeight: 650,
+              letterSpacing: "0.004em"
+            }}
+          />
         </ListItemButton>
       </List>
     </div>
